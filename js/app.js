@@ -1,5 +1,6 @@
 var myApp = angular.module('myApp', [
-	'ngRoute'
+	'ngRoute',
+	'appControllers'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider){
@@ -8,7 +9,8 @@ myApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'partials/landing.html'
 		}).
 		when('/question', {
-			templateUrl: 'partials/question.html'
+			templateUrl: 'partials/question.html',
+			controller: 'QuestionController'
 		}).
 		otherwise({
 			redirectTo: '/home'

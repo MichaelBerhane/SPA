@@ -1,0 +1,50 @@
+[
+	{
+		"no": "1",
+		"question" : "How often do you call your ex to woo them back?", 
+		"A": "All the damn time",
+		"B" : "Never",
+		"C" : "I did it once, but I regret it",
+		"D" : "F*ck that fool"
+	},
+	{
+		"no": "2",
+		"question": "Your friends invite you on a night out. You say?",
+		"A": "I'm taking the first shot",
+		"B" : "No, I'm reading 'Eat Pray Love'",
+		"C": "I'm not in the right place emotionally to party",
+		"D": "Loren Epsum"
+	},
+	{
+		"no": "3",
+		"question": "Your future partner will have?",
+		"A": "A lot of money",
+		"B" : "A great body",
+		"C": "A wonderful and deep personality",
+		"D": "Loren Epsum"
+	},
+	{
+		"no": "4",
+		"question": "The last time you cried?",
+		"A": "Last month",
+		"B" : "Within the last few years",
+		"C": "Yesterday",
+		"D": "Loren Epsum"
+	},
+	{
+		"no": "5",
+		"question": "You settle your beef by?",
+		"A": "A long heartfelt conversation",
+		"B" : "Violence",
+		"C": "Passive aggressive Tweets",
+		"D": "Loren epsum"
+	},
+	{
+		"no" : "6",
+		"question": "You put up an instagram photo which gets 0 likes. Do you...",
+		"A": "Delete the photo: Damage Control",
+		"B" : "Message your friends, asking what went wrong?",
+		"C": "Not even notice",
+		"D": "Ponder on it for a moment before moving on"
+	}
+]
