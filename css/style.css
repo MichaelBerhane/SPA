@@ -1,0 +1,39 @@
+body{
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+
+.content {
+	text-align: center;
+	padding-top: 40px;
+	margin: 40px;
+	
+}
+
+.content h1 {
+	
+	font-family: 'Roboto', san-serif;
+	font-weight: 700;
+
+}
+
+.content .btn {
+	padding: 14px 24px;
+
+}
+
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+
+}
+
+.footercontent {
+	margin: 0px 350px;
+	padding: 0px 20px;
+	
+	text-align: center;
+}
