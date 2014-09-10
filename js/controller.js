@@ -1,43 +1,61 @@
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('QuestionController', ['$scope', '$http', function($scope, $http){
-	$http.get('js/data.json').success(function(data){
-		$scope.question = data;
-		$scope.count = Number(0);
-		$scope.answer_count = 0;
+	/* A factory to share data across Controllers */
 
-		/* Increase the counter */
+	angular.module('myApp').factory('Data', function(){
 
-		$scope.button = function(num){
-			if($scope.count < 5){
-				$scope.count++;
-			}	
-			
-			var score = Number(num);
-			answer(score);
-		}
+		var score = "hello";
 
-		/* getter */
-
-		$scope.getcounter = function(){
-			return $scope.count;
-		}
-
-		var answer = function(answer){
-			console.log("current answer: " + answer);
-			$scope.answer_count += answer;
-			console.log("current score: " + $scope.answer_count);
-		}
-
+		return {
+			return_score: function(){
+					return score;
+			},
+			final_score: function(text){
+				score = text;
+			}
+		};
 	});
-}]);
+
+	/* Controller for the questions */
+
+	appControllers.controller('QuestionController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+		$http.get('js/data.json').success(function(data){
 
 
-appControllers.controller('AnswerController', ['$scope', '$http', function($scope, $http){
+			$scope.question = data;
+			$scope.count = 0;
+			$scope.answer_count = 0;
+
+			/* Increase the counter */
+
+			$scope.button = function(num){
+				if($scope.count < 5){
+					$scope.count++;
+					answer(num);
+				}
+
+			}
+
+			/* getter */
+
+			$scope.getcounter = function(){
+				return $scope.count;
+			}
+
+			var answer = function(answer){
+				$scope.answer_count += answer;
+				console.log("current answer: " + answer);
+				console.log("current score: " + $scope.answer_count);
+				Data.final_score($scope.answer_count);
+				console.log(Data.return_score());
+			}
+
+		});
+	}]);
 
 
+	/* A Controller for the results */
 
-
-
-}]);
-
+	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+			$scope.answer = Data.return_score();
+	}]);
