@@ -7,10 +7,16 @@ body{
   .container-fluid {
     max-width: 930px;
   }
-}P
+}
+
+
+.header {
+
+	border-bottom: 1px solid #e5e5e5;
+}
 
 .content {
-	border:1px solid black;
+
 }
 
 .content h1 {
@@ -51,4 +57,5 @@ body{
 
 #imageface {
 	height: 50px;
+	margin: 0px 0px 5px 0px;
 }

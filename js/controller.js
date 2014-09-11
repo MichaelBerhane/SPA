@@ -87,4 +87,15 @@ var appControllers = angular.module('appControllers', []);
 
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
 			$scope.answer = Data.percentage();
+
+			var down = $scope.answer / 10;
+		  var face =	Math.round(down);
+			$scope.number = [];
+			for (var i= 0; i < face; i++){
+				$scope.number.push('/images/face.png');
+			}
+
+			console.log($scope.number);
+
+
 	}]);
