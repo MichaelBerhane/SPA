@@ -7,6 +7,8 @@ var appControllers = angular.module('appControllers', []);
 	angular.module('myApp').factory('Data', function(){
 
 		var score = 0;
+		var max = 24;
+		var final;
 
 		return {
 			return_score: function(){
@@ -14,6 +16,21 @@ var appControllers = angular.module('appControllers', []);
 			},
 			final_score: function(text){
 				score = text;
+			},
+			percentage: function(){
+				var answer = (this.return_score()/max) * 100;
+				var randomizer = Math.random() * 9;
+				console.log(randomizer);
+				console.log(answer);
+
+				if(answer !== 100){
+					final = Math.round(answer + randomizer);
+				}
+				else {
+					final = Math.random(answer - randomizer);
+				}
+				console.log(final);
+				return final;
 			}
 		};
 	});
@@ -22,7 +39,7 @@ var appControllers = angular.module('appControllers', []);
 	* Controller for the questions
 	***********************************/
 
-	appControllers.controller('QuestionController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+	appControllers.controller('QuestionController', ['$scope', '$http', '$location', 'Data', function($scope, $http, $location, Data){
 		$http.get('js/data.json').success(function(data){
 
 
@@ -43,6 +60,8 @@ var appControllers = angular.module('appControllers', []);
 
 				if(button_click === 6){
 					answer(num);   // add answer on the final question.
+					$location.path('/result'); // Go to the results page
+
 				}
 
 			}
@@ -65,9 +84,13 @@ var appControllers = angular.module('appControllers', []);
 
 
 	/*******************************
-	* A Controller for the results 
+	* A Controller for the results
 	*******************************/
 
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
-			$scope.answer = Data.return_score();
+
+			$scope.answer = Data.percentage();
+
+
+
 	}]);
