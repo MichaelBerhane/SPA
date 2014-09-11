@@ -27,9 +27,9 @@ var appControllers = angular.module('appControllers', []);
 					final = Math.round(answer + randomizer);
 				}
 				else {
-					final = Math.random(answer - randomizer);
+					final = Math.round(answer - randomizer);
 				}
-				console.log(final);
+
 				return final;
 			}
 		};
@@ -61,9 +61,7 @@ var appControllers = angular.module('appControllers', []);
 				if(button_click === 6){
 					answer(num);   // add answer on the final question.
 					$location.path('/result'); // Go to the results page
-
 				}
-
 			}
 
 			/* getter */
@@ -88,9 +86,5 @@ var appControllers = angular.module('appControllers', []);
 	*******************************/
 
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
-
 			$scope.answer = Data.percentage();
-
-
-
 	}]);

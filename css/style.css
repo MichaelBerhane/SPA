@@ -3,10 +3,14 @@ body{
 	padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 930px;
+  }
+}P
+
 .content {
-	text-align: center;
-	padding-top: 40px;
-	margin: 40px;
+	border:1px solid black;
 }
 
 .content h1 {
@@ -16,6 +20,7 @@ body{
 
 .content .btn {
 	padding: 14px 24px;
+	font-size: 40px;
 }
 
 .footer {
@@ -25,7 +30,7 @@ body{
 	border-top: 1px solid #e5e5e5;
 }
 
-.footercontent {	
+.footercontent {
 	text-align: center;
 }
 
@@ -36,4 +41,8 @@ body{
 #title{
 	font-family: 'Roboto', san-serif;
 	text-align: center;
+}
+
+#imageface {
+	height: 50px;
 }
