@@ -32,7 +32,6 @@ body{
 
 .center {
 	padding: 100px 0px;
-
 }
 
 .footer {
@@ -50,6 +49,24 @@ body{
 	font-family: 'Roboto', san-serif;
 }
 
+#centered {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+#result h1{
+	font-family:'Roboto', san-serif;
+	font-weight: 700;
+}
+
+#result ul {
+	list-style-type: none;
+}
+
+#result li {
+	float: left;p
+}
+
 #title{
 	font-family: 'Roboto', san-serif;
 	text-align: center;
@@ -58,4 +75,12 @@ body{
 #imageface {
 	height: 50px;
 	margin: 0px 0px 5px 0px;
+}
+
+#faces{
+	margin: 0px 140px;
+}
+
+#imageresult {
+	height: 100px;
 }
