@@ -6,22 +6,23 @@
     <p class="lead"><b>{{answer + " %"}}</b></h4>
     <h4> DRAKE POWER BAR </h4>
 
-    <div id="faces">
-      <ul ng-repeat="image in number track by $index">
-        <li><img ng-src="{{image}}" id="imageresult"/></li>
-      </ul>
-    </div>
+    <!-- Drake Faces -->
+
+        <ul ng-repeat="image in number track by $index" id="faces">
+          <li><img ng-src="{{image}}" id="imageresult"/></li>
+        </ul>
+
+  </div>
 
 
-    <div class="row">
+    <!-- Drake Quotes -->
+
+
     <div id ="quotes">
-      <blockquote class="blockquote-reverse">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      <blockquote>
+      <p class ="lead">"{{entry.lyric}}"</p>
+      <footer>{{entry.song}}, <cite title="Source Title">Drake({{entry.year}})</cite></footer>
     </blockquote>
     </div>
-    </div>
 
-
-
-</div>
+  </div>

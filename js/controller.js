@@ -86,16 +86,36 @@ var appControllers = angular.module('appControllers', []);
 	*******************************/
 
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
-			$scope.answer = Data.percentage();
 
+			$scope.answer = Data.percentage();
 			var down = $scope.answer / 10;
 		  var face =	Math.round(down);
 			$scope.number = [];
+
 			for (var i= 0; i < face; i++){
 				$scope.number.push('/images/face.png');
 			}
 
-			console.log($scope.number);
+			$http.get('js/lyrics.json').success(function(data){
+					if(face <= 3){
+						$scope.entry = data[5];
+					}
+					else if(face > 3 && face <= 5){
+						$scope.entry = data[4];
+					}
+					else if(face > 5 && face <= 7){
+						$scope.entry = data[3];
+					}
+					else if(face > 7 && face <= 8){
+						$scope.entry = data [2];
+					}
+					else if(face > 8 && face <= 9){
+						$scope.entry = data[1];
+					}
+					else if(face > 9 && face <= 10){
+						$scope.entry = data[0];
+					}
+			});
 
 
 	}]);
