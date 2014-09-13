@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MichaelBerhane/SPA/issues"
   },
-  "homepage": "https://github.com/MichaelBerhane/SPA"
+  "homepage": "https://github.com/MichaelBerhane/SPA",
+  "dependencies": {
+    "express": "^4.9.0"
+  }
 }
