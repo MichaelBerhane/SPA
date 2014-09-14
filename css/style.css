@@ -7,12 +7,23 @@ body{
   .container-fluid {
     max-width: 930px;
   }
+
 }
 
+@media (max-width: 768px){
+	.content{
+
+		border: 1px solid black;
+		padding: 0px 0px;
+	}
+
+	.center{
+	  border: 1px solid black;
+	}
+}
 
 .header {
 	border-bottom: 1px solid #e5e5e5;
-	font-family: 'Roboto', san-serif;
 }
 
 .content {
@@ -20,9 +31,9 @@ body{
 }
 
 .content h1 {
-	font-family: 'Roboto', san-serif;
+	font-family: 'Oswald', san-serif;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 80px;
 }
 
 .content .btn {
@@ -31,8 +42,7 @@ body{
 }
 
 .center {
-	padding: 100px 0px;
-	border:0px solid black;
+	padding: 70px 0px;
 }
 
 .footer {
@@ -47,7 +57,7 @@ body{
 }
 
 .btn {
-	font-family: 'Roboto', san-serif;
+	font-family: 'Oswald', san-serif;
 }
 
 #centered {
@@ -64,7 +74,7 @@ body{
 
 
 #result h1{
-	font-family:'Roboto', san-serif;
+	font-family:'Oswald', san-serif;
 	font-weight: 700;
 }
 
@@ -77,7 +87,7 @@ body{
 }
 
 #title{
-	font-family: 'Roboto', san-serif;
+	font-family: 'Oswald', san-serif;
 	text-align: center;
 }
 
