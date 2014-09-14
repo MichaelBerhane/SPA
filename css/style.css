@@ -11,15 +11,19 @@ body{
 }
 
 @media (max-width: 768px){
-	.content{
+ .content {
+}
 
-		border: 1px solid black;
-		padding: 0px 0px;
-	}
+.content h1 {
 
-	.center{
-	  border: 1px solid black;
-	}
+}
+
+.center {
+
+
+}
+
+
 }
 
 .header {
@@ -28,17 +32,20 @@ body{
 
 .content {
 
+
 }
 
 .content h1 {
 	font-family: 'Oswald', san-serif;
 	font-weight: 700;
-	font-size: 80px;
+	font-size: 70px;
+
 }
 
 .content .btn {
 	padding: 14px 24px;
-	font-size: 40px;
+	font-size: 30px;
+
 }
 
 .center {
