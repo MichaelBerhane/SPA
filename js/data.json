@@ -1,7 +1,7 @@
 [
 	{
 		"no": "1",
-		"question" : "How often do you call your ex to woo them back?", 
+		"question" : "How often do you call your ex to woo them back?",
 		"A": "All the damn time",
 		"B" : "Never",
 		"C" : "I did it once, but I regret it",
@@ -10,34 +10,34 @@
 	{
 		"no": "2",
 		"question": "Your friends invite you on a night out. You say?",
-		"A": "I'm taking the first shot",
+		"A": "I'm not in the right place emotionally to party",
 		"B" : "No, I'm reading 'Eat Pray Love'",
-		"C": "I'm not in the right place emotionally to party",
-		"D": "Loren Epsum"
+		"C": "Okay, but only if its a neo-soul bar",
+		"D": "I'm taking the first shot"
 	},
 	{
 		"no": "3",
-		"question": "Your future partner will have?",
-		"A": "A lot of money",
-		"B" : "A great body",
-		"C": "A wonderful and deep personality",
-		"D": "Loren Epsum"
+		"question": "Your ideal partner has?",
+		"A": "A deep and fulfilling personality",
+		"B" : "Great conversation",
+		"C": "A great body",
+		"D": "A lot of money"
 	},
 	{
 		"no": "4",
 		"question": "The last time you cried?",
-		"A": "Last month",
-		"B" : "Within the last few years",
-		"C": "Yesterday",
-		"D": "Loren Epsum"
+		"A" : "Due to the harsh questioning: Right now",
+		"B": "Last month",
+		"C" : "Within the last few years",
+		"D": "I've never cried"
 	},
 	{
 		"no": "5",
 		"question": "You settle your beef by?",
-		"A": "A long heartfelt conversation",
-		"B" : "Violence",
-		"C": "Passive aggressive Tweets",
-		"D": "Loren epsum"
+		"A": "Having a long heartfelt conversation",
+		"B" : "Passive aggressive tweets",
+		"C": "A dance off",
+		"D": "Violence"
 	},
 	{
 		"no" : "6",
