@@ -1,28 +1,31 @@
 <div id="result" ng-controller="ResultController">
 
+
   <div id="centered">
+
     <h1>RESULT</h1>
-    <p class="lead"> Your Drake Sensitivity Level </p>
-    <p class="lead"><b>{{answer + " %"}}</b></h4>
-    <h4> DRAKE POWER BAR </h4>
+      <p class="lead"> Your Drake Sensitivity Level </p>
+      <h2><b>{{answer + " %"}}</b></h4>
+    <h4>DRAKE POWER BAR</h4>
 
     <!-- Drake Faces -->
 
-        <ul ng-repeat="image in number track by $index" id="faces">
-          <li><img ng-src="{{image}}" id="imageresult"/></li>
-        </ul>
+      <ul ng-repeat="image in number track by $index" id="faces">
+
+        <li><img ng-src="{{image}}" id="imageresult"/></li>
+
+      </ul>
 
   </div>
-
 
     <!-- Drake Quotes -->
-
-
+    <p>
     <div id ="quotes">
-      <blockquote>
-      <p class ="lead">"{{entry.lyric}}"</p>
-      <footer>{{entry.song}}, <cite title="Source Title">Drake({{entry.year}})</cite></footer>
-    </blockquote>
+        <blockquote>
+        <p class ="lead">"{{entry.lyric}}"</p>
+        <footer>{{entry.song}}, <cite title="Source Title">Drake({{entry.year}})</cite></footer>
+        </blockquote>
     </div>
+  </p>
 
-  </div>
+</div>

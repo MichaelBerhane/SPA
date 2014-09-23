@@ -1,19 +1,22 @@
 
 <div ng-controller="QuestionController">
-	
-	<h2 id ="title">{{question[count].no + ". " + question[count].question | uppercase }}</h2>
-	<button type="button" ng-click="button(1)" class="btn btn-default btn-lg btn-block">
-		{{"A. " + question[count].A}}
+
+	<h1 id ="title">{{question[count].no + ". " + question[count].question | uppercase }}</h2>
+
+
+	<button type="button" ng-click="button(1)" class="btn btn-default btn-lg btn-block lead ">
+		{{"A. " + question[count].A | uppercase}}
 	</button>
-	<button type="button" ng-click="button(2)" class="btn btn-default btn-lg btn-block">
-		{{"B. " + question[count].B}}
+	<button type="button" ng-click="button(2)" class="btn btn-default btn-lg btn-block lead">
+		{{"B. " + question[count].B | uppercase}}
 	</button>
-	<button type="button" ng-click="button(3)" class="btn btn-default btn-lg btn-block">
-		{{"C. " + question[count].C}}
+	<button type="button" ng-click="button(3)" class="btn btn-default btn-lg btn-block lead">
+		{{"C. " + question[count].C | uppercase}}
 	</button>
-	<button type="button" ng-click="button(4)" class="btn btn-default btn-lg btn-block">
-		{{"D. " + question[count].D}}
+	<button type="button" ng-click="button(4)" class="btn btn-default btn-lg btn-block lead">
+		{{"D. " + question[count].D | uppercase}}
 	</button>
 
-	
+
+
 </div>
