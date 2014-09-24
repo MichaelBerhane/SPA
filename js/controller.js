@@ -40,7 +40,7 @@ var appControllers = angular.module('appControllers', []);
 			var answer;
 
 			return {
-				input: function(input){
+				inputted: function(input){
 						var answer = input;
 						console.log("static answer: " + answer);
 				},
@@ -103,7 +103,7 @@ var appControllers = angular.module('appControllers', []);
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', 'Answer', function($scope, $http, Data, Answer){
 
 			$scope.answer = Data.percentage();
-			Answer.answer($scope.answer);
+			Answer.inputted($scope.answer);
 			var down = $scope.answer / 10;
 		  var face =	Math.round(down);
 			$scope.number = [];
