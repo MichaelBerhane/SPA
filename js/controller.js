@@ -42,7 +42,6 @@ var appControllers = angular.module('appControllers', []);
 	appControllers.controller('QuestionController', ['$scope', '$http', '$location', 'Data', function($scope, $http, $location, Data){
 		$http.get('js/data.json').success(function(data){
 
-
 			$scope.question = data; // Json data //
 			$scope.count = 0;  			// Rotate through Json Array
 			$scope.answer_count = 0; // The score //
@@ -51,6 +50,7 @@ var appControllers = angular.module('appControllers', []);
 			/* Increase the counter */
 
 			$scope.button = function(num){
+
 				button_click++;  // button increase every time an answer is clicked
 
 				if($scope.count <= 5 && button_click <= 5){
