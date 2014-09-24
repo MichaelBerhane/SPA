@@ -35,7 +35,7 @@ var appControllers = angular.module('appControllers', []);
 	});
 
 
-	angular.module('myApp').factor('Answer', function(){
+	angular.module('myApp').factory('Answer', function(){
 
 			var answer;
 
