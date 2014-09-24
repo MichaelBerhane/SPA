@@ -115,7 +115,24 @@ var appControllers = angular.module('appControllers', []);
 					else if(face > 9 && face <= 10){
 						$scope.entry = data[0];
 					}
-			});
+	});
+
+
+	appControllers.controller('FacebookController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+
+			$scope.share = function(){
+				FB.ui(
+				{
+					method: 'feed',
+	        name: 'Test Name',
+	        link: 'http://www.feelingslikedrake.com',
+	        picture: 'images/face.png',
+	        caption: 'test',
+	        description: 'test description',
+	        message: 'test message'
+				});
+			}
+	}]);
 
 
 	}]);
