@@ -119,6 +119,7 @@ var appControllers = angular.module('appControllers', []);
 
 
 	appControllers.controller('FacebookController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+		console.log('hello world');
 
 			$scope.share = function(){
 				FB.ui(
