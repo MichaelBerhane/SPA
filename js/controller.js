@@ -40,10 +40,11 @@ var appControllers = angular.module('appControllers', []);
 			var answer;
 
 			return {
-				answer: function(input){
+				input: function(input){
 						var answer = input;
+						console.log("static answer: " + answer);
 				},
-				return_answer: function(input){
+				return_answer: function(){
 						return answer;
 				}
 			};
