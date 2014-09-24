@@ -126,7 +126,7 @@ var appControllers = angular.module('appControllers', []);
 						method: 'feed',
 		        name: 'Your Drake Sensitivty Score',
 		        link: 'www.feelingslikedrake.com/',
-		        picture: 'images/face.png',
+		        picture: 'www.feelingslikedrake.com/images/face.png',
 		        caption: '',
 		        description: 'This is the content of the "description" field, below the caption.',
 		        message: ''
