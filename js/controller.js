@@ -124,7 +124,7 @@ var appControllers = angular.module('appControllers', []);
 			$scope.share = function(){
 				FB.ui({
 						method: 'feed',
-		        name: 'Your Drake Sensitivty Score',
+		        name: 'Your Drake Sensitivty Score ' + Data.percentage,
 		        link: 'www.feelingslikedrake.com/',
 		        picture: 'www.feelingslikedrake.com/images/face.png',
 		        caption: '',
