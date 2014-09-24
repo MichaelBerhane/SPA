@@ -117,23 +117,20 @@ var appControllers = angular.module('appControllers', []);
 					}
 	});
 
-
-	appControllers.controller('FacebookController', ['$scope', '$http', 'Data', function($scope, $http, Data){
-		console.log('hello world');
-
-			$scope.share = function(){
-				FB.ui(
-				{
-					method: 'feed',
-	        name: 'Test Name',
-	        link: 'http://www.feelingslikedrake.com',
-	        picture: 'images/face.png',
-	        caption: 'test',
-	        description: 'test description',
-	        message: 'test message'
-				});
-			}
 	}]);
 
+
+	appControllers.controller('fbCtrl', ['$scope', '$http', 'Data', function($scope, $http, Data){
+			$scope.share = function(){
+				FB.ui({
+						method: 'feed',
+		        name: 'This is the content of the "name" field.',
+		        link: 'www.feelingslikedrake.com/',
+		        picture: 'www.facebooklikedrake.com/images/face.png',
+		        caption: '',
+		        description: 'This is the content of the "description" field, below the caption.',
+		        message: ''
+				});
+			}
 
 	}]);

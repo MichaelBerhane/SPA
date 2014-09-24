@@ -11,11 +11,11 @@
 
     <!-- Drake Faces -->
 
-      <ul ng-repeat="image in number track by $index" id="faces">
+    <ul ng-repeat="image in number track by $index" id="faces">
 
-        <li><img ng-src="{{image}}" id="imageresult"/></li>
+      <li><img ng-src="{{image}}" id="imageresult"/></li>
 
-      </ul>
+    </ul>
 
   </div>
 
@@ -27,13 +27,11 @@
         <footer>{{entry.song}}, <cite title="Source Title">Drake({{entry.year}})</cite></footer>
         </blockquote>
     </div>
-  </p>
+    </p>
 
 </div>
 
-<div ng-controller = "FacebookController">
 
-    <button ng-click="share()">Share</button>
-
-
+<div ng-controller="fbCtrl">
+      <button ng-click="share()">Share</button>
 </div>
