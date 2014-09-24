@@ -37,11 +37,11 @@
 	<div class="container-fluid">
 		<div class="header">
 			<ul class="nav nav-pills pull-right hidden-xs">
-				<li class="active"><a href="#/home">Home</a>
+				<li><a href="#/home">Home</a>
 				<li><a href="#/about">About</a></li>
 			</ul>
-			<a href="/"><img ng-src ="/images/face.png" class ="img-responsive hidden-xs" id="imageface"/></a>
-			<a href="/"><img ng-src="/images/face.png" class="img-responsive visible-xs" id="largeface"/></a>
+			<a ng-href="#/home"><img ng-src ="/images/face.png" class ="img-responsive hidden-xs" id="imageface"/></a>
+			<a ng-href="#/home"><img ng-src="/images/face.png" class="img-responsive visible-xs" id="largeface"/></a>
 		</div>
 
 		<div class="center">
@@ -59,7 +59,7 @@
 					<p>
 					By <a href="http://www.twitter.com/MichaelBerhane_">@MichaelBerhane_</a>
 					</p>
-					Home | About | FAQS
+					<a ng-href="#/home">Home</a> | <a ng-href="#/about">About</a>
 				</div>
 			</div>
 
