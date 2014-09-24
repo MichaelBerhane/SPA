@@ -29,11 +29,7 @@ var appControllers = angular.module('appControllers', []);
 				else {
 					final = Math.round(answer - randomizer);
 				}
-
 				return final;
-			},
-			answer: function(){
-				this.percentage();
 			}
 		};
 	});
@@ -90,7 +86,7 @@ var appControllers = angular.module('appControllers', []);
 
 	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
 
-			$scope.answer = Data.answer();
+			$scope.answer = Data.percentage();
 			var down = $scope.answer / 10;
 		  var face =	Math.round(down);
 			$scope.number = [];
@@ -127,7 +123,7 @@ var appControllers = angular.module('appControllers', []);
 			$scope.share = function(){
 				FB.ui({
 						method: 'feed',
-		        name: 'Your Drake Sensitivty Score ' + Data.answer() + ' %',
+		        name: 'Your Drake Sensitivty Score ' + Data.percentage() + ' %',
 		        link: 'www.feelingslikedrake.com/',
 		        picture: 'www.feelingslikedrake.com/images/face.png',
 		        caption: '',
