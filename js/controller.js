@@ -34,6 +34,21 @@ var appControllers = angular.module('appControllers', []);
 		};
 	});
 
+
+	angular.module('myApp').factor('Answer', function(){
+
+			var answer;
+
+			return {
+				answer: function(input){
+						var answer = input;
+				},
+				return_answer: function(input){
+						return answer;
+				}
+			};
+	});
+
 	/*******************************
 	* Controller for the questions
 	***********************************/
@@ -84,9 +99,10 @@ var appControllers = angular.module('appControllers', []);
 	* A Controller for the results
 	*******************************/
 
-	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+	appControllers.controller('ResultController', ['$scope', '$http', 'Data', 'Answer', function($scope, $http, Data, Answer){
 
 			$scope.answer = Data.percentage();
+			Answer.answer($scope.answer);
 			var down = $scope.answer / 10;
 		  var face =	Math.round(down);
 			$scope.number = [];
@@ -119,11 +135,11 @@ var appControllers = angular.module('appControllers', []);
 	}]);
 
 
-	appControllers.controller('fbCtrl', ['$scope', '$http', 'Data', function($scope, $http, Data){
+	appControllers.controller('fbCtrl', ['$scope', '$http', 'Answer', function($scope, $http, Answer){
 			$scope.share = function(){
 				FB.ui({
 						method: 'feed',
-		        name: 'Your Drake Sensitivty Score ' + Data.percentage() + ' %',
+		        name: 'Your Drake Sensitivty Score ' + Answer.return_answer() + ' %',
 		        link: 'www.feelingslikedrake.com/',
 		        picture: 'www.feelingslikedrake.com/images/face.png',
 		        caption: '',
