@@ -124,9 +124,9 @@ var appControllers = angular.module('appControllers', []);
 			$scope.share = function(){
 				FB.ui({
 						method: 'feed',
-		        name: 'This is the content of the "name" field.',
+		        name: 'Your Drake Sensitivty Score',
 		        link: 'www.feelingslikedrake.com/',
-		        picture: 'www.facebooklikedrake.com/images/face.png',
+		        picture: 'images/face.png',
 		        caption: '',
 		        description: 'This is the content of the "description" field, below the caption.',
 		        message: ''
