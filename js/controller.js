@@ -46,7 +46,7 @@ var appControllers = angular.module('appControllers', []);
 				},
 				return_answer: function(){
 						return answer;
-						
+
 				}
 			};
 	});
@@ -144,9 +144,9 @@ var appControllers = angular.module('appControllers', []);
 		        name: 'Your Drake Sensitivty Score ' + Answer.return_answer() + ' %',
 		        link: 'www.feelingslikedrake.com/',
 		        picture: 'www.feelingslikedrake.com/images/face.png',
-		        caption: '',
-		        description: 'This is the content of the "description" field, below the caption.',
-		        message: ''
+		        caption: 'test',
+		        description: 'Measure Your Drake Sensitivity Level With This Quick Quiz',
+		        message: 'message test'
 				});
 			}
 
