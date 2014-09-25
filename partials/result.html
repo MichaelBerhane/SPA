@@ -2,7 +2,7 @@
 <div id="result" ng-controller="ResultController">
 
 
-  <div id="centered">
+  <div class="centered">
 
     <h1>RESULT</h1>
       <p class="lead"> Your Drake Sensitivity Level </p>
@@ -28,17 +28,9 @@
         </blockquote>
     </div>
     </p>
-
 </div>
 
-
-<div ng-controller="fbCtrl">
-
-      <button type="button" class="btn btn-default" ng-click="share()">
-      <img ng-src="/images/fb.png"/> Share Your Score On Facebook
-      </button>
-
-
-
-
+<div class= "centered" ng-controller="fbCtrl">
+      <h3>Share Your Score</h3>
+      <a href="" ng-click="share()"><img ng-src="/images/fb.png"/></a>
 </div>
