@@ -109,6 +109,10 @@ body{
 
 /********* Media Queries **********/
 
+
+/* Tablet and Desktop */
+
+
 @media (min-width: 768px) {
 	.container-fluid {
 		max-width: 930px;
@@ -116,6 +120,10 @@ body{
 
 
 }
+
+
+/* Smartphone */
+
 
 @media (max-width: 768px){
 	.content{
