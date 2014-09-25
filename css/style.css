@@ -51,6 +51,11 @@ body{
 	border:0px solid black;
 }
 
+.tryagain {
+	text-align: center;
+	margin: 15px 0px;
+}
+
 .social {
 	text-align: center;
 
