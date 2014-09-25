@@ -12,15 +12,13 @@
     <!-- Drake Faces -->
 
     <ul ng-repeat="image in number track by $index" id="faces">
-
       <li><img ng-src="{{image}}" id="imageresult"/></li>
-
     </ul>
 
-  </div>
-
-    <!-- Drake Quotes -->
     <p>
+    <br>
+
+    <!-- Drake Quotes -->  
     <div id ="quotes">
         <blockquote>
         <p class ="lead">"{{entry.lyric}}"</p>
@@ -28,9 +26,11 @@
         </blockquote>
     </div>
     </p>
-</div>
 
-<div class= "centered" ng-controller="fbCtrl">
+  </div>
+
+</div>
+<div class= "social" ng-controller="fbCtrl">
       <h3>Share Your Score</h3>
       <a href="" ng-click="share()"><img ng-src="/images/fb.png"/></a>
 </div>

@@ -47,14 +47,20 @@ body{
 
 .centered {
 	text-align: center;
-	padding: 0px 0px 100px 0px;
+	padding: 0px 0px 0px 0px;
 	border:0px solid black;
+}
+
+.social {
+	text-align: center;
+
 }
 
 #quotes {
 	text-align: center;
 	border:0px solid black;
-	margin: 200px 0px 0px 0px;
+	margin: 105px 0px 0px 0px;
+	padding-top: 20px;
 }
 
 
@@ -64,8 +70,12 @@ body{
 }
 
 #result ul {
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 }
+
+
 
 #result li {
 	float: left;
@@ -92,13 +102,13 @@ body{
 }
 
 #faces{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	border:0px solid black;
+	margin: 0px 0px 30px 0px;
 }
 
 #imageresult {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
 	height: 100px;
 }
 
@@ -118,12 +128,9 @@ body{
 		max-width: 930px;
 	}
 
-
 }
 
-
 /* Smartphone */
-
 
 @media (max-width: 768px){
 	.content{
@@ -133,6 +140,13 @@ body{
 	.center{
 				padding: 0px 0px;
 				margin-bottom: 100px;
+	}
+
+	#quotes {
+		text-align: center;
+		border:0px solid black;
+		margin: 195px 0px 0px 0px;
+		padding-top: 20px;
 	}
 
 }
