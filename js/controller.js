@@ -29,10 +29,26 @@ var appControllers = angular.module('appControllers', []);
 				else {
 					final = Math.round(answer - randomizer);
 				}
-
 				return final;
 			}
 		};
+	});
+
+
+	angular.module('myApp').factory('Answer', function(){
+
+			var answer;
+
+			return {
+				inputted: function(input){
+						answer = input;
+						console.log("static answer: " + answer);
+				},
+				return_answer: function(){
+						return answer;
+
+				}
+			};
 	});
 
 	/*******************************
@@ -42,7 +58,6 @@ var appControllers = angular.module('appControllers', []);
 	appControllers.controller('QuestionController', ['$scope', '$http', '$location', 'Data', function($scope, $http, $location, Data){
 		$http.get('js/data.json').success(function(data){
 
-
 			$scope.question = data; // Json data //
 			$scope.count = 0;  			// Rotate through Json Array
 			$scope.answer_count = 0; // The score //
@@ -51,6 +66,7 @@ var appControllers = angular.module('appControllers', []);
 			/* Increase the counter */
 
 			$scope.button = function(num){
+
 				button_click++;  // button increase every time an answer is clicked
 
 				if($scope.count <= 5 && button_click <= 5){
@@ -85,9 +101,10 @@ var appControllers = angular.module('appControllers', []);
 	* A Controller for the results
 	*******************************/
 
-	appControllers.controller('ResultController', ['$scope', '$http', 'Data', function($scope, $http, Data){
+	appControllers.controller('ResultController', ['$scope', '$http', 'Data', 'Answer', function($scope, $http, Data, Answer){
 
 			$scope.answer = Data.percentage();
+			Answer.inputted($scope.answer);
 			var down = $scope.answer / 10;
 		  var face =	Math.round(down);
 			$scope.number = [];
@@ -115,7 +132,22 @@ var appControllers = angular.module('appControllers', []);
 					else if(face > 9 && face <= 10){
 						$scope.entry = data[0];
 					}
-			});
+	});
 
+	}]);
+
+
+	appControllers.controller('fbCtrl', ['$scope', '$http', 'Answer', function($scope, $http, Answer){
+			$scope.share = function(){
+				FB.ui({
+						method: 'feed',
+		        name: 'Your Drake Sensitivty Score ' + Answer.return_answer() + ' %',
+		        link: 'www.feelingslikedrake.com/',
+		        picture: 'www.feelingslikedrake.com/images/face.png',
+		        caption: '',
+		        description: 'Measure Your Drake Sensitivity Level With This Quick Quiz',
+		        message: ''
+				});
+			}
 
 	}]);

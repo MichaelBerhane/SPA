@@ -1,3 +1,4 @@
+
 <div id="result" ng-controller="ResultController">
 
 
@@ -10,11 +11,11 @@
 
     <!-- Drake Faces -->
 
-      <ul ng-repeat="image in number track by $index" id="faces">
+    <ul ng-repeat="image in number track by $index" id="faces">
 
-        <li><img ng-src="{{image}}" id="imageresult"/></li>
+      <li><img ng-src="{{image}}" id="imageresult"/></li>
 
-      </ul>
+    </ul>
 
   </div>
 
@@ -26,6 +27,18 @@
         <footer>{{entry.song}}, <cite title="Source Title">Drake({{entry.year}})</cite></footer>
         </blockquote>
     </div>
-  </p>
+    </p>
+
+</div>
+
+
+<div ng-controller="fbCtrl">
+
+      <button type="button" class="btn btn-default" ng-click="share()">
+      <img ng-src="/images/fb.png"/> Share Your Score On Facebook
+      </button>
+
+
+
 
 </div>
