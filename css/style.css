@@ -3,25 +3,8 @@ body{
 	padding-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .container-fluid {
-    max-width: 930px;
-  }
-
-}
-
-@media (max-width: 768px){
-
-
-}
-
 .header {
 	border-bottom: 1px solid #e5e5e5;
-}
-
-.content {
-
-
 }
 
 .content h1 {
@@ -109,3 +92,29 @@ body{
 #imageresult {
 	height: 100px;
 }
+
+
+
+
+
+
+/**********
+Tablet
+**********/
+@media (max-width: 780px) {
+
+	.container-fluid {
+		max-width: 930px;
+	}
+
+}/* end tablet */
+
+
+
+/**********
+Smartphones
+**********/
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 700px){
+
+
+}/* end smartphone */
