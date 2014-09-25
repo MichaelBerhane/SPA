@@ -1,10 +1,10 @@
 [
 	{
 		"no": "1",
-		"question" : "How often do you call your ex to woo them back?",
-		"A": "All the damn time",
-		"B" : "Never",
-		"C" : "I did it once, but I regret it",
+		"question" : "How often have you called your ex to get them back?",
+		"A": "I've lost count",
+		"B" : "Once, but blame it on the Rozay",
+		"C" : "Never",
 		"D" : "F*ck that fool"
 	},
 	{
@@ -43,7 +43,7 @@
 		"no" : "6",
 		"question": "You put up an instagram photo which gets 0 likes. Do you...",
 		"A": "Delete the photo: Damage Control",
-		"B" : "Message your friends, asking what went wrong?",
+		"B" : "Message your friends 'what went wrong?''",
 		"C": "Not even notice",
 		"D": "Ponder on it for a moment before moving on"
 	}
