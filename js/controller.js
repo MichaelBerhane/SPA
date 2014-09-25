@@ -141,11 +141,11 @@ var appControllers = angular.module('appControllers', []);
 			$scope.share = function(){
 				FB.ui({
 						method: 'feed',
-		        name: 'Your Drake Sensitivty Score: ' + Answer.return_answer() + ' %',
+		        name: 'My Drake Sensitivty Score: ' + Answer.return_answer() + ' %',
 		        link: 'www.feelingslikedrake.com/',
 		        picture: 'www.feelingslikedrake.com/images/face.png',
 		        caption: '',
-		        description: 'Measure Your Drake Sensitivity Level With This Quick Quiz',
+		        description: 'Find Out Your Drake Sensitivity Level With This Quick Quiz',
 		        message: ''
 				});
 			}
