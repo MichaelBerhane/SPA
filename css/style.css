@@ -17,12 +17,14 @@ body{
 .content h1 {
 	font-family: 'Oswald', san-serif;
 	font-weight: 700;
+	font-size: 70px;
+	text-transform: uppercase;
 
 }
 
 .content .btn {
 	padding: 14px 24px;
-	font-size: 30px;
+	font-size: 40px;
 	font-family: 'Oswald', san-serif;
 }
 
@@ -140,6 +142,10 @@ body{
 @media (max-width: 768px){
 	.content{
 				padding: 0px 0px;
+	}
+
+	.content h1{
+			font-size: 36px;
 	}
 
 	.center{
