@@ -60,7 +60,12 @@ body{
 
 .social {
 	text-align: center;
+	text-transform: uppercase;
+}
 
+.social h1{
+	font-family: 'Oswald', san-serif;
+	font-weight: 700;
 }
 
 #quotes {
